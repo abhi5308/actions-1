@@ -7,7 +7,7 @@ jobs:
         runs-on: Ubuntu-latest
         steps:
             - name: welcome message
-              run: echo"hello"
+              run: echo "hello"
 
             - name: list files
               run: ls
