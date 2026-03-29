@@ -8,14 +8,21 @@ jobs:
         steps:
             - name: checkout-repo
               uses: actions/checkout@v6
-              
-            - name: welcome message
-              run: echo "hello"
 
-            - name: list files
-              run: ls
+            - name: list and reads file message
+              run: |
+                   echo "hello"
+                   ls -ltr
+                   cat README.md
 
-            - name: Read files
-              run: cat README.md
+            - name : generate ASCII artwork
+              run : cowsay -f dragon "Run for cover ,I am a DRAGON ...RAWR" >> dragon.txt
+                
+
+           # - name: list files
+            #  run: ls
+
+            #- name: Read files
+             # run: cat README.md
 
 
